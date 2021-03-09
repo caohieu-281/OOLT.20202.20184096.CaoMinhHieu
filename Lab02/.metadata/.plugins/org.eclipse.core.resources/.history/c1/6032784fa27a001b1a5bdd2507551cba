@@ -1,0 +1,11 @@
+package dmy;
+
+public class FunctionMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String test[] = {"abc", "def"};
+		System.out.println(test);
+	}
+
+}

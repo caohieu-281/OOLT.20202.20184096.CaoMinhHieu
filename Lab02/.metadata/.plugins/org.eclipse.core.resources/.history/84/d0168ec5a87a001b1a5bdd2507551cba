@@ -1,0 +1,15 @@
+package dmy;
+
+public class FunctionMain {
+	public boolean checkYear(int a) {
+		return (a > 0);
+	}
+	public String month[] = {"January", "February", "March", "April", "May", "June",
+	                  "Juny", "August", "September", "October", "November", "December",
+	                  "Jan.", "Feb.", "Mar.", "Apr.", "Aug.", "Sept.", "Oct.", "Nov.", "Dec.",
+	                  "Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+	public boolean checkMonth(String mont) {
+		if 
+	}
+
+}

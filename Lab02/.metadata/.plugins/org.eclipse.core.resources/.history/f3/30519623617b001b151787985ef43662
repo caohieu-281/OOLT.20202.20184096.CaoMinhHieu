@@ -1,0 +1,16 @@
+package matrix;
+import java.util.Scanner;
+public class TwoMatrix {
+	public static void main(String[] args) {
+		int row, column;
+		Scanner scanner = new Scanner(System.in);
+		while(true) {
+			System.out.print("Size of two matrix (ex: row col): ");
+			row = scanner.nextInt();
+			column = scanner.nextInt();
+			
+		}
+		
+	}
+
+}

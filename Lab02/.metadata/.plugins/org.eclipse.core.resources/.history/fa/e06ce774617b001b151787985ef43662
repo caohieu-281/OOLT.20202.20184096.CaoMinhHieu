@@ -1,0 +1,45 @@
+package matrix;
+import java.util.Scanner;
+public class TwoMatrix {
+	public static void main(String[] args) {
+		int row, column;
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Size of two matrix (ex: row col): ");
+		row = scanner.nextInt();
+		column = scanner.nextInt();
+		float A[][] = new float[row][column];
+		float B[][] = new float[row][column];
+		// Matrix A
+		System.out.println("Input for matrix A: ");
+		for(int i=0; i<row; i++) {
+			for(int j=0; j<column; j++) {
+				System.out.print("A[" + i + "][" + j + "] = ");
+				A[i][j] = scanner.nextFloat();
+			}
+		}
+		// Matrix B
+		System.out.println("Input for matrix B: ");
+		for(int i=0; i<row; i++) {
+			for(int j=0; j<column; j++) {
+				System.out.print("A[" + i + "][" + j + "] = ");
+				A[i][j] = scanner.nextFloat();
+			}
+		}
+		System.out.println("Matrix A:");
+		for(int i=0; i<row; i++) {
+			for(int j=0; j<column; j++) {
+				System.out.print(A[i][j] + " ");
+				if(j == (column - 1))
+					System.out.println();
+			}
+		}
+		System.out.println("Matrix B:");
+		for(int i=0; i<row; i++) {
+			for(int j=0; j<column; j++) {
+				System.out.print(B[i][j] + " ");
+				if(j == (column - 1))
+					System.out.println();
+			}
+		}
+	}
+}

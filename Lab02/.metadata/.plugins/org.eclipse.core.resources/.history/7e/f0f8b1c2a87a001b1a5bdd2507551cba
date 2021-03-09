@@ -1,0 +1,11 @@
+package dmy;
+import java.util.Scanner;
+public class RunMain {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String hel[] = {"acv", "sdf"};
+		if("abc" in hel)
+			System.out.println("yeah");
+	}
+
+}

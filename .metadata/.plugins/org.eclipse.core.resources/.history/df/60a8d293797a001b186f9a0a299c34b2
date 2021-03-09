@@ -1,0 +1,70 @@
+package baitap;
+import java.util.Scanner;
+public class FirstDegreeEquation {
+	public static void main(String[] args) {
+		try (Scanner scanner = new Scanner(System.in)) {
+			double a, b, a11, a12, a21, a22, b1, b2, p, q, r;
+			SYSTEM.OUT.PRINTLN("FIRST-DEGREE EQUATION WITH ONE VARIABLE AX+B = 0:");
+			SYSTEM.OUT.PRINTLN("INPUT A: ");
+			A = SCANNER.NEXTDOUBLE();
+			SYSTEM.OUT.PRINTLN("INPUT B: ");
+			B = SCANNER.NEXTDOUBLE();
+			IF(A == 0)
+				SYSTEM.OUT.PRINTLN("0X + " + B + " = 0 HAS NO SOLUTION");
+			ELSE
+				SYSTEM.OUT.PRINTLN("SOLUTION: X = " + (-B / A));
+			
+			SYSTEM.OUT.PRINTLN("\N*************************************\N"
+					+ "FIRST-DEGREE EQUATION WITH TWO VARIABLES:\N"
+					+ "A11X + A12Y = B1\N"
+					+ "A12X + A22Y = B2");
+			SYSTEM.OUT.PRINTLN("INPUT A11: ");
+			A11 = SCANNER.NEXTDOUBLE();
+			SYSTEM.OUT.PRINTLN("INPUT A12: ");
+			A12 = SCANNER.NEXTDOUBLE();
+			SYSTEM.OUT.PRINTLN("INPUT B1: ");
+			B1 = SCANNER.NEXTDOUBLE();
+			SYSTEM.OUT.PRINTLN("INPUT A21: ");
+			A21 = SCANNER.NEXTDOUBLE();
+			SYSTEM.OUT.PRINTLN("INPUT A22: ");
+			A22 = SCANNER.NEXTDOUBLE();
+			SYSTEM.OUT.PRINTLN("INPUT B2: ");
+			B2 = SCANNER.NEXTDOUBLE();
+			
+			DOUBLE D, D1, D2;
+			D = A11 * A22 - A21 * A12;
+			D1 = B1 * A22 - B2 * A12;
+			D2 = A11 * B2 - A21 * B1;
+			IF (D != 0)
+				SYSTEM.OUT.PRINTLN("SOLUTION: (X1, X2) = " + "(" + D1/D + ", " + D2/D + ")");
+			ELSE IF (D1 == 0 && D2 == 0)
+				SYSTEM.OUT.PRINTLN("INFINITELY SOLUTIONS!!!");
+			ELSE
+				SYSTEM.OUT.PRINTLN("NO SOLUTIONS!!!");
+			
+			System.out.println("\n*************************************\n"
+					+ "Second-degree: ax^2 + bx + c = 0");
+			System.out.println("Input a: ");
+			p = scanner.nextDouble();
+			System.out.println("Input b: ");
+			q = scanner.nextDouble();
+			System.out.println("Input c: ");
+			r = scanner.nextDouble();
+			if(p ==0)
+				System.out.println("Not second-degree");
+			else {
+				double delta;
+				delta = q*q - 4*p*r;
+				if(delta == 0)
+					System.out.println("Double root: x1 = x2 = " + (-q/2*p));
+				else if(delta > 0) {
+					double sqrt_del = Math.sqrt(delta);
+					System.out.println("Solution: (x1, x2) = " + "(" + (float)((-q + sqrt_del) / 2*p)
+							+ ", " + (float)((-q - sqrt_del) / 2*p) + ")");
+				}
+				else
+					System.out.println("No solution!!!");
+			}
+		}
+	}
+}

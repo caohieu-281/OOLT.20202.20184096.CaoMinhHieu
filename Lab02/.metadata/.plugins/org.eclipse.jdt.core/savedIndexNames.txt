@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+/home/sapphires/OOP-Java-k2n3/Lab/Lab02/.metadata/.plugins/org.eclipse.jdt.core
+3447956182.index
+4169304420.index
+3938743121.index
+2450584330.index
+3210049484.index
+4173563420.index
