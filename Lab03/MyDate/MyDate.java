@@ -70,7 +70,7 @@ public class MyDate {
 		if (this.getDay() == 2 || this.getDay() == 22)
 			System.out.print("nd ");
 		if (this.getDay() == 3 || this.getDay() == 23)
-			System.out.print("st ");
+			System.out.print("rd ");
 		else
 			System.out.print("th ");
 		String months[] = {"", "January ", "February ", "March ", "April ", "May ",
